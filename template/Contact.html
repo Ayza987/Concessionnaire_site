@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactez-nous</title>
+    <style>
+        /* Votre CSS ici. Assurez-vous qu'il est en concordance avec votre fichier CSS existant. */
+        body {
+            font-family: lucida sans;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .contact-form {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .contact-form input, .contact-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background-color: #7cb62f; /* Couleur du bouton */
+            color: white; /* Couleur du texte du bouton */
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #6daa2c; /* Couleur du bouton lors du survol */
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <form action="/submit_contact" method="post">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="tel" name="phone" placeholder="Numéro de téléphone" required>
+            <input type="email" name="email" placeholder="Adresse mail" required>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
